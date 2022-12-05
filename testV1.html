@@ -13,23 +13,24 @@
 </head>
 <body>
 
-<nav class="navbar navbar-light bg-light">
+ <div class="container-flex">
+
+    <div class="naves">
+        <nav class="navbar navbar-light">
+            <div class="debut">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="images-shop/biberon.png" alt="">
-
-									Ass eater
-
+                <img src="images-shop/logo.png" alt="">
             </a>
-            <div class="socials">
-                <a href="#" class=""><i class="fa fa-shopping-basket"></i> </a>
-                
-                <div>Mon Panier</div>
-            </div>
         </div>
-    </nav>
+        <div class="siteNom">
+            <p>BABYSHOP</p>
+            <p>.COM</p>
+        </div>
+        </div>
+        </nav>
 
-    <nav class="navbar custom-navbar navbar-expand-md navbar-light bg-primary sticky-top">
+        <nav class="menu navbar custom-navbar navbar-expand-md sticky-top">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,36 +38,48 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Baby Girl</a>
+                        <a class="nav-link btn1" href="index.html">Baby Girl</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="no-sidebar.html">Baby Boy</a>
+                        <a class="nav-link btn2" href="no-sidebar.html">Baby Boy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="single-post.html">Soldes</a>
+                        <a class="nav-link btn3" href="single-post.html">Soldes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="single-post.html">Accessoires</a>
+                        <a class="nav-link btn4" href="single-post.html">Accessoires</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link btn5" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Baby Toys</a>
+                        <a class="nav-link btn6" href="#">Baby Toys</a>
                     </li>
                 </ul>
-                <div class="navbar-nav ml-auto">
-                    <form class="navbar-form form-inline">
-			<div class="input-group search-box">								
-				<input type="text" id="search" class="form-control" placeholder="Search here...">
-				<span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
-			</div>
-		</form>
-                </div>
+                
             </div>
         </div>
-    </nav>
+        </nav>
 
+    </div>
+
+    <div class="panier">
+        <div class="debut">
+                <a href="images-shop/panier.png"> <img src="images-shop/panier.png" alt=""> </a>
+                <div> <p>Mon panier</p>
+                     <p>0 articles - 0.00€</p>
+                </div>
+        </div>
+        
+        <form class="navbar-form form-inline">
+			<div class="input-group search-box">								
+				<input type="text" id="search" class="form-control" placeholder="Rechercher ...">
+				<span class="input-group-addon" style="color : #ec932d"><i class="material-icons">&#xE8B6;</i></span>
+			</div>
+		</form>
+
+    </div>
+</div>
     <header class="page-header">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
