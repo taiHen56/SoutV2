@@ -30,10 +30,10 @@ display: inline-grid;
 .btn1{
   background: #f27b81;
   color:white;
+
 }
 .btn2{
  background: #f7c44e; 
- border-radius: 20%;
 }
 .btn3{
   background: #aec158;
@@ -53,13 +53,16 @@ display: inline-grid;
   
 }
 
-.menu ul li a{
+.menu ul li button{
+  
   color: white;
+  /*
   border-radius: 10%;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
   -ms-border-radius: 10%;
   -o-border-radius: 10%;
+  */
 }
 
 .menu ul li a:hover{
@@ -151,4 +154,18 @@ body{
   .page-header {
     max-height: 350px;
   }
+}
+
+
+.vaj{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 300px;
+}
+
+.vaj a{
+  position: relative;
+  padding-top: 100px;
+  padding-left: 50px;
 }
