@@ -55,6 +55,8 @@ display: inline-grid;
 
 .menu ul li button{
   
+  border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   color: white;
   /*
   border-radius: 10%;
@@ -107,12 +109,7 @@ display: inline-grid;
   white-space: nowrap;
 }
 
-.page-header {
-  position: relative;
-  background: url() no-repeat center top fixed;
-  background-size: cover;
-  height: 450px;
-}
+
 
 @media (max-width: 767.98px) {
   .page-header {
@@ -147,7 +144,7 @@ body{
   position: relative;
   background: url() no-repeat center top fixed;
   background-size: cover;
-  height: 450px;
+  height: 750px;
 }
 
 @media (max-width: 767.98px) {
@@ -156,6 +153,9 @@ body{
   }
 }
 
+.carousel{
+  height: 100%;
+}
 
 .vaj{
   display: flex;
@@ -163,9 +163,52 @@ body{
   flex-direction: row;
   margin-top: 300px;
 }
-
+/*
 .vaj a{
   position: relative;
   padding-top: 100px;
   padding-left: 50px;
+}
+*/
+
+.vet{
+  
+  height: 220px;
+ 
+}
+
+.ements{
+  background: url(images-shop/vetements.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 100%;
+  width:100%;
+}
+
+.ace{
+  height: 220px;
+}
+
+.ssoires{
+  background: url(images-shop/accessoires.jpg);
+  background-size: cover;
+  height: 100%;
+  width:100%;
+}
+
+.jou{
+  height: 220px;
+
+}
+
+
+.ets{
+  background: url(images-shop/Jouets.jpg);
+  background-size: cover;
+  height: 100%;
+  width:100%;
+
+}
+.achete{
+  margin-top: 150px;
 }
