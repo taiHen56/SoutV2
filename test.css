@@ -1,0 +1,215 @@
+body{
+    font-family: Quicksand;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.panier{
+display: inline-grid;
+
+}
+
+.debut{
+   display :flex;
+   align-items:center;
+   
+}
+
+.siteNom{
+  font-weight: bold;
+   font-size:xx-large ;
+   color : #ec932d;
+}
+
+.btn1{
+  background: #f27b81;
+  color:white;
+
+}
+.btn2{
+ background: #f7c44e; 
+}
+.btn3{
+  background: #aec158;
+}
+.btn4{
+  background:#4cbcd4 ;
+}
+.btn5{
+  background: #e98821;
+}
+.btn6{
+  background: #8ca8b3;
+}
+
+.menu ul li {
+  padding-left: 5px;
+  
+}
+
+.menu ul li button{
+  
+  border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  color: white;
+  /*
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  */
+}
+
+.menu ul li a:hover{
+  text-shadow: 0 0 4px rgb(255, 254, 254);
+  opacity: 70000%;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+
+.container-flex{
+
+   display: flex;
+
+   justify-content: space-between;
+   padding-left: 20%;
+   padding-right: 20%;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+}
+
+.navbar .navbar-brand img {
+  width: 70px;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 10px;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.page-header {
+  position: relative;
+  background: url() no-repeat center top fixed;
+  background-size: cover;
+  height: 450px;
+}
+
+@media (max-width: 767.98px) {
+  .page-header {
+    max-height: 350px;
+  }
+}
+body{
+    font-family: Quicksand;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar .navbar-brand img {
+  width: 70px;
+}
+
+.navbar-brand {
+  
+  margin-right: 0px;
+  font-size: 1.25rem;
+  line-height: inherit;
+  
+}
+
+.page-header {
+  position: relative;
+  background: url() no-repeat center top fixed;
+  background-size: cover;
+  height: 450px;
+}
+
+@media (max-width: 767.98px) {
+  .page-header {
+    max-height: 350px;
+  }
+}
+
+
+.vaj{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 300px;
+}
+/*
+.vaj a{
+  position: relative;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+*/
+
+.vet{
+  
+  
+ 
+}
+
+.ements{
+  background: url(images-shop/vetements.jpg);
+  background-size: cover;
+  height: 100%;
+  width:100%;
+}
+
+.ace{
+
+}
+
+.ssoires{
+  background: url(images-shop/accessoires.jpg);
+  background-size: cover;
+  height: 100%;
+  width:100%;
+}
+
+.jou{
+
+
+}
+
+
+.ets{
+  background: url(images-shop/Jouets.jpg);
+  background-size: cover;
+  height: 100%;
+  width:100%;
+
+}
+.achete{
+  
+}
