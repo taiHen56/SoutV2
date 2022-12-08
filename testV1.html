@@ -15,74 +15,76 @@
 </head>
 <body>
 
- <div class="container-flex">
 
-    <div class="naves">
-        <nav class="navbar navbar-light">
-            <div class="debut">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images-shop/logo.png" alt="">
-            </a>
-        </div>
-        <div class="siteNom">
-            <p>BABYSHOP</p>
-            <p>.COM</p>
-        </div>
-        </div>
-        </nav>
 
-        <nav class="menu navbar custom-navbar navbar-expand-md sticky-top">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item me-2">
-                        <button class="btn btn1 babygirl text-white p-3 pe-4 ps-4" href="#">Baby Girl</button>
-                      </li>
-                      <li class="nav-item me-2">
-                        <button class="btn btn2 babyboy text-white p-3 pe-4 ps-4" href="#">Baby Boys</button>
-                      </li>
-                      <li class="nav-item me-2">
-                        <button class="btn btn3 soldes text-white p-3 pe-4 ps-4" href="#">Soldes</button>
-                      </li>
-                      <li class="nav-item me-2">
-                        <button class="btn btn4 accessoires text-white p-3 pe-4 ps-4" href="#">Accessoires</button>
-                      </li>
-                      <li class="nav-item me-2">
-                        <button class="btn btn5 blog text-white p-3 pe-4 ps-4" href="#">Blog</button>
-                      </li>
-                      <li class="nav-item me-2">
-                        <button class="btn btn6 babytoy text-white p-3 pe-4 ps-4" href="#">Baby toys</button>
-                      </li>
-                </ul>
-                
+  <header class="container">
+        <section class="row">
+            <div class="col-sm-8 justify-content-start d-flex">
+                <img class="img-fluid" src="images-shop/logo.png">
+                <h1 class="text-warning pt-1 ms-2">BABYSHOP<br>.COM</h1>
             </div>
-        </div>
-        </nav>
+            <div class="col-sm-3 d-flex offset-sm-1">
+                <img class="h-70 align-self-center m-2" src="images-shop/panier.png">
+                <p class="align-self-center mb-0">
+                  <span class="text-warning">Mon Panier</span>
+                  <br>
+                  <span class="text-secondary">0 articles - 0,00€</span>
+                </p>
+            </div>
+        </section>
 
-    </div>
+        <section class="row">
+            <nav class="menu navbar navbar-expand-lg navbar-light">
+              
+                <div class="col-sm-9 justify-content-sm-end ">
+                  
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <div class="panier">
-        <div class="debut">
-                <a href="images-shop/panier.png"> <img src="images-shop/panier.png" alt=""> </a>
-                <div> <p>Mon panier</p>
-                     <p>0 articles - 0.00€</p>
-                </div>
-        </div>
+                  
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                      <li class="nav-item me-2">
+                        <button class="btn btn1 text-white p-3 pe-4 ps-4" href="#">Baby Girl</button>
+                      </li>
+                      <li class="nav-item me-2">
+                        <button class="btn btn2 text-white p-3 pe-4 ps-4" href="#">Baby Boys</button>
+                      </li>
+                      <li class="nav-item me-2">
+                        <button class="btn btn3 text-white p-3 pe-4 ps-4" href="#">Soldes</button>
+                      </li>
+                      <li class="nav-item me-2">
+                        <button class="btn btn4 text-white p-3 pe-4 ps-4" href="#">Accessoires</button>
+                      </li>
+                      <li class="nav-item me-2">
+                        <button class="btn btn5 text-white p-3 pe-4 ps-4" href="#">Blog</button>
+                      </li>
+                      <li class="nav-item me-2">
+                        <button class="btn btn6 text-white p-3 pe-4 ps-4" href="#">Baby toys</button>
+                      </li>
+                    </ul>
+                    </div>
+               </div>
+
+                
+               <form class="col-sm-2 align-self-end form-inline d-flex offset-sm-1">
+                          <input class="form-control mr-sm-1 border-0 fs-4" type="search" placeholder="Rechercher" aria-label="Search">
+                            <span class="input-group-addon"><i class="align-self-center fa-solid fs-4 fa-magnifying-glass text-warning"></i></span>
+              </form>
+
+                      
+              </nav>
+        </section>
+    </header>
+
+   
         
-        <form class="navbar-form form-inline">
-			<div class="input-group search-box">								
-				<input type="text" id="search" class="form-control mr-sm-1 border-0 fs-4 align-self-center" placeholder="Rechercher ...">
-				<span class="input-group-addon" style="color : #ec932d"><i class="material-icons">&#xE8B6;</i></span>
-			</div>
-		</form>
+        
 
-    </div>
-</div>
-    <header class="page-header">
+
+    <section class="manege">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -106,12 +108,14 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-    </header>
+    </section>
 
+
+    <!-- Categories -->
 <section class="row vaj">
 
     <article class="card vet col-12 col-xl-3 col-md-6 border-0">
-        <img src="images-shop/vetements.jpg" alt="" srcset="">
+        <img src="images-shop/vetements.jpg" alt="vet" srcset="">
 
           <div class="achete">
            <h2>Vêtements</h2> 
@@ -124,7 +128,7 @@
 
   <article class="card ace col-12 col-xl-3 col-md-6 border-0">
       
-        <img src="images-shop/accessoires.jpg" alt="" srcset="">
+        <img src="images-shop/accessoires.jpg" alt="acc" srcset="">
         <div class="achete">
 
           <h2>Accessoires</h2> 
@@ -136,7 +140,7 @@
     
   <article class="card jou col-12 col-xl-3 col-md-6 border-0">
     
-      <img src="images-shop/Jouets.jpg" alt="" srcset="">
+      <img src="images-shop/Jouets.jpg" alt="jou" srcset="">
       <div class="achete">
        <h2>Jouets</h2> 
        <button type="submit">VOIR</button>
@@ -151,11 +155,18 @@
 
 
 <section class="derniers_arr">
-
+<div id="p1">
 <div class="row">
 
   <article class="card produit col-12 col-xl-3 col-md-6 border-0 ">
-    <img src="images-shop/jouet.jpg" class="card-img-top" alt="">
+    <img src="images-shop/jouet.jpg" class="card-img-top" alt="x">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
     <div class="card-body">
       <div class="ratings">
                 <i class="fa fa-star rating-color"></i>
@@ -171,6 +182,13 @@
 
   <article class="card produit col-12 col-xl-3 col-md-6 border-0">
     <img src="images-shop/vet_rouge.jpg" alt="">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
     <div class="card-body">
       <div class="ratings">
                 <i class="fa fa-star"></i>
@@ -186,6 +204,13 @@
 
   <article class="card produit col-12 col-xl-3 col-md-6 border-0">
     <img src="images-shop/ours_sac.jpg" alt="">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
     <div class="card-body">
       <div class="ratings">
                 <i class="fa fa-star rating-color"></i>
@@ -205,6 +230,13 @@
   
 <article class="card produit col-12 col-xl-3 col-md-6 border-0 ">
     <img src="images-shop/panta.jpg" alt="">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
     <div class="card-body">
       <div class="ratings">
                 <i class="fa fa-star rating-color"></i>
@@ -220,6 +252,13 @@
 
   <article class="card produit col-12 col-xl-3 col-md-6 border-0">
     <img src="images-shop/tshirtbleu.jpg" alt="">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
     <div class="card-body">
       <div class="ratings">
                 <i class="fa fa-star"></i>
@@ -235,6 +274,13 @@
 
   <article class="card produit col-12 col-xl-3 col-md-6 border-0">
     <img src="images-shop/chichic.jpg" alt="">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
     <div class="card-body">
       <div class="ratings">
                 <i class="fa fa-star rating-color"></i>
@@ -249,11 +295,153 @@
   </article>
 
 </div>
+</div>
+
+<div class="deuxiemepage" id="p2">
+<div class="row ">
+
+  <article class="card produit col-12 col-xl-3 col-md-6 border-0 ">
+    <img src="images-shop/kango.jpg" class="card-img-top" alt="x">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
+    <div class="card-body">
+      <div class="ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+        </div>
+      <h5 class="card-title">Voluptas Assumenda</h5>
+      <h5 class="card-price">78€</h5>
+    </div>
+  </article>
+
+  <article class="card produit col-12 col-xl-3 col-md-6 border-0">
+    <img src="images-shop/robot.jpg" alt="">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
+    <div class="card-body">
+      <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+        </div>
+      <h5 class="card-title">Nostrud Exercitation</h5>
+      <h5 class="card-price">98€</h5>
+    </div>
+  </article>
+
+  <article class="card produit col-12 col-xl-3 col-md-6 border-0">
+    <img src="images-shop/bodybebe.jpg" alt="">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
+    <div class="card-body">
+      <div class="ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+        </div>
+      <h5 class="card-title">Commodi Consequatur</h5>
+      <h5 class="card-price">85€</h5>
+    </div>
+  </article>
+
+</div>
+
+<div class="row ">
   
+<article class="card produit col-12 col-xl-3 col-md-6 border-0 ">
+    <img src="images-shop/brico.jpg" alt="">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
+    <div class="card-body">
+      <div class="ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+        </div>
+      <h5 class="card-title">Voluptas Assumenda</h5>
+      <h5 class="card-price">78€</h5>
+    </div>
+  </article>
+
+  <article class="card produit col-12 col-xl-3 col-md-6 border-0">
+    <img src="images-shop/sac_rose.jpg" alt="">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
+    <div class="card-body">
+      <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+        </div>
+      <h5 class="card-title">Nostrud Exercitation</h5>
+      <h5 class="card-price">98€</h5>
+    </div>
+  </article>
+
+  <article class="card produit col-12 col-xl-3 col-md-6 border-0">
+    <img src="images-shop/sandales.jpg" alt="">
+    <div class="card-img-overlay justify-content-end">
+
+      <p><i class="fa fa-heart-o"></i></p>
+      <p><i class="fas fa-eye"></i></p>
+      <p><i class="fas fa-shopping-basket"></i></p>
+
+    </div>
+    <div class="card-body">
+      <div class="ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+        </div>
+      <h5 class="card-title">Commodi Consequatur</h5>
+      <h5 class="card-price">85€</h5>
+    </div>
+  </article>
+
+</div>
+  </div>
 <div class="pagination">
-  <a href="" class="active">1</a>
-  <a href="">2</a>
-  <a href="">&raquo;</a>
+  <button class="active" onclick="page1()" id="b1">1</button>
+  <button onclick="page2()" id="b2">2</button>
+  <button onclick="avancer()" id="b3">&raquo;</button>
 </div>
 
 </section>
@@ -305,6 +493,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="magie.js"></script>
 
 
 </body>

@@ -1,37 +1,30 @@
 
+@font-face {
+    font-family: "Quicksand-Bold";
+    src : 
+    url("quicksand/Quicksand_Bold.otf") format("opentype");
+    }
+
+@font-face {
+    font-family: "Quicksand";
+    src : 
+    url("quicksand/Quicksand-Regular.otf") format("opentype");
+    }
 
 body{
     font-family: Quicksand;
 }
 
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-.panier{
-display: inline-grid;
-
-}
-
-.debut{
-   display :flex;
-   align-items:center;
-   
-}
 
 .siteNom{
-  font-weight: bold;
-   font-size:xx-large ;
-   color : #ec932d;
+  font-family: "Quicksand-Bold";
+  font-size:xx-large ;
+  color : #ec932d;
 }
 
 .btn1{
   background: #f27b81;
-  color:white;
 
 }
 .btn2{
@@ -58,15 +51,8 @@ display: inline-grid;
 .menu ul li button{
   
   border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   color: white;
-  /*
-  border-radius: 10%;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
-  */
 }
 
 .menu ul li button:hover{
@@ -76,80 +62,22 @@ display: inline-grid;
 }
 
 
-.container-flex{
 
-   display: flex;
+/*
 
-   justify-content: space-between;
-   padding-left: 20%;
-   padding-right: 20%;
-  
-  /* Then we define the flow direction 
-     and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
-  flex-flow: row wrap;
-}
+Carousel
 
-.navbar .navbar-brand img {
-  width: 70px;
-}
-
-.navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 10px;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
-}
-
-
-
-@media (max-width: 767.98px) {
-  .page-header {
+*/@media (max-width: 767.98px) {
+  .manege {
     max-height: 350px;
   }
 }
-body{
-    font-family: Quicksand;
-}
 
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.navbar .navbar-brand img {
-  width: 70px;
-}
-
-.navbar-brand {
-  
-  margin-right: 0px;
-  font-size: 1.25rem;
-  line-height: inherit;
-  
-}
-
-.page-header {
+.manege{
   position: relative;
-  background: url() no-repeat center top fixed;
-  background-size: cover;
   height: 750px;
 }
 
-@media (max-width: 767.98px) {
-  .page-header {
-    max-height: 350px;
-  }
-}
 
 .carousel{
   height: 100%;
@@ -287,6 +215,9 @@ Derniers arrivages
   position: relative;
 }
 
+.deuxiemepage{
+  visibility: collapse;
+}
 .row{
 
   display: flex;
@@ -297,6 +228,7 @@ Derniers arrivages
 
 .produit{
   height: 800px;
+  margin-bottom: -160px;
 }
 
 .ratings{
@@ -322,23 +254,48 @@ Derniers arrivages
   bottom: 0;
 }
 
-.pagination a {
-  background-color: #053dd8;
+
+
+.pagination button {
+  background-color: #4cbcd4;
   color: rgb(255, 255, 255);
   float: left;
   padding: 8px 16px;
   text-decoration: none;
   transition: background-color .3s;
-  border: 1px solid #053dd8;
+  border-radius: 10px;
+  border: 1px solid #4cbcd4;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-left: 5px;
 }
 
-.pagination a.active {
+.pagination button.active {
   background-color: #ec932d;
   color: white;
   border: 1px solid #ec932d;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+.pagination button:hover:not(.active) {
+  background-color: #ec932de5;
+  border: 1px solid #ec932d;
+}
+
+.card-img-overlay{
+ left: 405px;
+  font-size: 20px;
+  color: #e98821;
+}
+
+.card-img-overlay i:hover,
+.card-img-overlay i:focus{
+  color: #e9882191;
+  text-shadow: 0 0 4px #e98821;
+}
 
 /*
 
@@ -351,6 +308,8 @@ FOOTER
 
 footer{
   font-weight: bold;
+  position: relative;
+  
 }
 
 .basdepage{
@@ -367,4 +326,32 @@ footer{
 .vraibasdepage h2{
   color: #fff;
   font-size: 20px;
+}
+
+.newsletter{
+  background-color: #4cbcd4;
+    border-radius: 15px;
+    font-family: 'Quicksand-Regular';
+    width: 55%;
+}
+
+.newsletter:focus{
+    background-color: #51d5f3;
+    color:rgb(255, 255, 255)
+}
+
+.newsletter::placeholder {
+    color:rgba(0, 0, 0, 0.39);
+}
+
+
+
+.newsletterbtn{
+    background-color: #4cbcd4;
+    border-radius: 15px;
+    padding-right: 10px;  
+}
+.newsletterbtn:hover {
+    background-color: #308ea3;
+    border-radius: 15px;  
 }
