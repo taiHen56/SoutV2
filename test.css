@@ -1,3 +1,5 @@
+
+
 body{
     font-family: Quicksand;
 }
@@ -67,14 +69,10 @@ display: inline-grid;
   */
 }
 
-.menu ul li a:hover{
+.menu ul li button:hover{
   text-shadow: 0 0 4px rgb(255, 254, 254);
   opacity: 70000%;
-  border-radius: 10%;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
+  
 }
 
 
@@ -157,19 +155,21 @@ body{
   height: 100%;
 }
 
+
+/*
+
+Categories
+
+
+*/
+
 .vaj{
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-top: 300px;
+  margin-top: 100px;
 }
-/*
-.vaj a{
-  position: relative;
-  padding-top: 100px;
-  padding-left: 50px;
-}
-*/
+
 
 .vet{
   
@@ -178,9 +178,7 @@ body{
 }
 
 .ements{
-  background: url(images-shop/vetements.jpg);
-  background-size: cover;
-  background-position: right;
+
   height: 100%;
   width:100%;
 }
@@ -190,8 +188,7 @@ body{
 }
 
 .ssoires{
-  background: url(images-shop/accessoires.jpg);
-  background-size: cover;
+
   height: 100%;
   width:100%;
 }
@@ -203,12 +200,171 @@ body{
 
 
 .ets{
-  background: url(images-shop/Jouets.jpg);
-  background-size: cover;
+
   height: 100%;
   width:100%;
 
 }
 .achete{
-  margin-top: 150px;
+  margin-top: -94px;
+  margin-left: 20px;
+}
+
+.achete h2{
+  color:#fff;
+}
+
+.achete button,
+.achete button::after{
+
+-webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+.achete button{
+  background: #fff;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.achete button::before,
+.achete button::after{
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  mix-blend-mode: color-burn;
+}
+
+.achete button:hover{
+   
+   color: #ffffff;
+   background-color: #4cbbd400;
+}
+
+.achete button::after{
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.acheter button:hover::after{
+  height: 100%;
+}
+
+
+/*
+
+Derniers arrivages
+
+*/
+
+.titre{
+  margin-left: 10%;
+}
+
+.derniers_arr{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+
+  position: relative;
+}
+
+.row{
+
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+
+}
+
+.produit{
+  height: 800px;
+}
+
+.ratings{
+    margin-right:10px;
+}
+
+.ratings i{
+    
+    color:#cecece;
+    font-size:32px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+.pagination {
+  display: inline-block;
+  position: absolute; 
+  right: 0;  
+  width: 150px;  
+  transform: translateY(-50%);
+  bottom: 0;
+}
+
+.pagination a {
+  background-color: #053dd8;
+  color: rgb(255, 255, 255);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #053dd8;
+}
+
+.pagination a.active {
+  background-color: #ec932d;
+  color: white;
+  border: 1px solid #ec932d;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/*
+
+
+FOOTER
+
+
+*/
+
+
+footer{
+  font-weight: bold;
+}
+
+.basdepage{
+  background-image: url("images-shop/footer-bkg.png");
+  background-size: cover;
+    min-height: 275px;
+}
+
+.vraibasdepage{
+  background-color: #e98821;
+  padding: 10px;
+}
+
+.vraibasdepage h2{
+  color: #fff;
+  font-size: 20px;
 }
