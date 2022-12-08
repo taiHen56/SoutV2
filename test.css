@@ -13,6 +13,7 @@
 
 body{
     font-family: Quicksand;
+    overflow-x: hidden;
 }
 
 
@@ -67,7 +68,9 @@ body{
 
 Carousel
 
-*/@media (max-width: 767.98px) {
+*/
+
+@media (max-width: 767.98px) {
   .manege {
     max-height: 350px;
   }
@@ -204,6 +207,9 @@ Derniers arrivages
 
 .titre{
   margin-left: 10%;
+  color: #e98821;
+    font-family: "Quicksand-Bold";
+
 }
 
 .derniers_arr{
@@ -215,7 +221,7 @@ Derniers arrivages
   position: relative;
 }
 
-.deuxiemepage{
+#p2{
   visibility: collapse;
 }
 .row{
@@ -229,6 +235,16 @@ Derniers arrivages
 .produit{
   height: 800px;
   margin-bottom: -160px;
+
+  transition: transform 0.2s ease;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+}
+
+.produit:hover{
+      transform: scale(1.1);
+
 }
 
 .ratings{
@@ -243,6 +259,16 @@ Derniers arrivages
 
 .rating-color{
     color:#fbc634 !important;
+}
+
+.card-price{
+  color: #4cbcd4;
+}
+
+.card-title:hover,
+.card-title:focus{
+color: #e98821;
+cursor: pointer;
 }
 
 .pagination {
@@ -292,7 +318,8 @@ Derniers arrivages
 }
 
 .card-img-overlay i:hover,
-.card-img-overlay i:focus{
+.card-img-overlay i:focus,
+.socials i:hover{
   color: #e9882191;
   text-shadow: 0 0 4px #e98821;
 }
