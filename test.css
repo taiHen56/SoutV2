@@ -221,8 +221,13 @@ Derniers arrivages
   position: relative;
 }
 
+#p1{
+  display: block;
+}
+
 #p2{
-  visibility: collapse;
+  /*visibility: collapse;*/
+  display: none;
 }
 .row{
 
