@@ -24,3 +24,14 @@ function avancer(){
         page1();
     }
 }
+
+(function($){
+    $('.navbar-toggler').click(function(e){
+        e.preventDefault();
+        $('.nav-overlay').toggleClass('actif');
+    })
+    $('.nav-overlay').click(function(e){
+        e.preventDefault();
+        $('.nav-overlay').toggleClass('actif');
+    })
+})(jQuery);
