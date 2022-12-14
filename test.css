@@ -11,9 +11,13 @@
     url("quicksand/Quicksand-Regular.otf") format("opentype");
     }
 
+
+
+
 body{
     font-family: Quicksand;
     overflow-x: hidden;
+     width:  100%;
 }
 
 header{
@@ -37,9 +41,10 @@ width: 80%;
 
 .siteNom{
   font-family: "Quicksand-Bold";
-  font-size:xx-large ;
+  display: block;
   color : #ec932d;
 }
+
 
 .search1,
 .search2{
@@ -65,9 +70,10 @@ width: 80%;
 
 
 header{
-  
+  flex-direction: row-reverse;
   background-color: #e9882154;
   position: sticky;
+  justify-content: space-between;
 }
 
 header button{
@@ -93,6 +99,10 @@ header button{
 
   .search1{
     display: none;
+  }
+
+  .logo{
+    flex-direction: row-reverse;
   }
 /*
   .search2{
@@ -124,6 +134,33 @@ header button{
   background: #8ca8b3;
 }
 
+.btn1:hover{
+  background: #f14d55;
+
+}
+.btn2:hover{
+ background: #f1b016; 
+}
+.btn3:hover{
+  background: #a3bd30;
+}
+.btn4:hover{
+  background:#25b2d1 ;
+}
+.btn5:hover{
+  background: #db7100;
+}
+.btn6:hover{
+  background: #7ba4b4;
+}
+
+.menu{
+  padding-top: 0.5rem;
+padding-right: 1rem;
+padding-bottom: 0px;
+padding-left: 0px;
+}
+
 .menu ul li {
   padding-left: 5px;
   
@@ -147,10 +184,12 @@ header button{
 	right:0;
 	bottom:0;
 	left:0;
+  width: 100%;
+  height: 100%;
 	background-color:rgba(0,0,0,0.5);
 	z-index:1;
 	opacity:0;
-  visibility: hidden;
+  visibility: collapse;
 	-webkit-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
 	transition-duration: 0.3s;
@@ -159,6 +198,10 @@ header button{
 .nav-overlay.actif{
 	opacity:1;
 	visibility:visible;
+}
+
+#recherche{
+  flex-wrap: inherit;
 }
 
 /*
@@ -353,13 +396,16 @@ Derniers arrivages
 }
 
 @media (max-width: 767.98px) {
-  .row {
+  .card-img-overlay {
   }
 }
 
 @media (max-width: 575.98px) {
   .derniers_arr .row {
     flex-flow: column;
+  }
+  .card-img-overlay > p {
+    display: none;
   }
 
 }
@@ -445,7 +491,6 @@ cursor: pointer;
 }
 
 .card-img-overlay{
- left: 405px;
   font-size: 20px;
   color: #e98821;
 }
@@ -469,18 +514,42 @@ FOOTER
 footer{
   font-weight: bold;
   position: relative;
+  display: flex;
+  flex-flow: column;
   
+}
+
+@media (max-width: 575.98px) {
+
+  footer{
+    align-items: center;
+  }
+
+  .newsletter{
+    width: 100%;
+  }
+
+  .enbas{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+
 }
 
 .basdepage{
   background-image: url("images-shop/footer-bkg.png");
   background-size: cover;
     min-height: 275px;
+    width: 100%;
 }
+
 
 .vraibasdepage{
   background-color: #e98821;
   padding: 10px;
+  width: 100%;
 }
 
 .vraibasdepage h2{

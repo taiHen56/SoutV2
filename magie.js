@@ -28,10 +28,41 @@ function avancer(){
 (function($){
     $('.navbar-toggler').click(function(e){
         e.preventDefault();
-        $('.nav-overlay').toggleClass('actif');
+        
+        if($('.nav-overlay').hasClass('actif')){
+            $('.nav-overlay').toggleClass('actif');
+
+            $('html, body').css({
+    overflow: 'auto',
+    height: 'auto'
+});
+$('.siteNom').css("display", "none");
+        }else{
+            $('.nav-overlay').toggleClass('actif');
+            $('html, body').css({
+    overflow: 'hidden',
+    height: '100%'
+});
+ $('.siteNom').css("display", "block");
+        }
+        /**/
     })
-    $('.nav-overlay').click(function(e){
-        e.preventDefault();
-        $('.nav-overlay').toggleClass('actif');
-    })
+    
+})(jQuery);
+
+$(document).ready(function() {
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+
+    function checkTailleEcran() {
+        var windowsize = $window.width();
+        if (windowsize > 575.98) {
+            //if the window is greater than 440px wide then turn on jScrollPane..
+            $('.siteNom').css("display", "block");
+        }
+    }
+    // Execute on load
+    checkTailleEcran();
+    // Bind event listener
+    $(window).resize(checkTailleEcran);
 })(jQuery);
